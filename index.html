@@ -12,17 +12,17 @@
 </head>
 <body>
     <!-- === === === Header === === === -->
-    <header>
+    <header id="header">
         <!-- === === Nav === === -->
-        <nav>
+        <nav id="nav-bar">
             <!-- Any logo -->
             <figure>
-                <img src="" alt="logo">
+                <img id="header-img" src="" alt="logo">
             </figure> 
             <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#howItWorks">How It works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#video" class="nav-link">How It works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -32,10 +32,10 @@
         <h1>Page Title</h1>
 
         <!-- === === Form === === -->
-        <form>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
             <label for="email">Email</label>
-            <input type="email"/ placeholder="Enter your email address">
-            <input type="submit" value="Get Started">
+            <input id="email" type="email"/ placeholder="Enter your email address">
+            <input id="submit" type="submit" value="Get Started">
         </form>
 
         <!-- === === Features Section === === -->
@@ -53,11 +53,11 @@
             width="420"
             height="315"
             src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            id="howItWorks">
+            id="video">
         </iframe>
 
         <!-- === === Pricing Section === === -->
-        <section class="cards__flex" id="princing">
+        <section class="cards__flex" id="pricing">
             <div class="card__princing">
                 <h3>material</h3>
                 <p>200 €</p>
@@ -88,5 +88,8 @@
         </ul>
         <p>Copyright 2022, Original</p>
     </footer>
+
+    <!-- ! === === === Testing === === === -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
