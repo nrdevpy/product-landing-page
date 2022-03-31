@@ -115,6 +115,8 @@ i {
     cursor: pointer;
     background-color: var(--primaryColor);
     transition: var(--ease);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .form__btn:hover {
     background-color: var(--secundaryColor);
