@@ -157,7 +157,6 @@ i {
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
-    text-align: center;
 }
 .section__features p {
     text-align: start;
@@ -179,9 +178,6 @@ i {
     .video iframe {
         max-width: 75vw;
         min-height: 50vh;
-    }
-    .section__features {
-        text-align: start;
     }
     .features__div {
         display: flex;
@@ -209,8 +205,7 @@ i {
 .card__pricing {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70vw;
+    max-width: 20rem;
     
     border: solid 1px #000;
     border-radius: .5rem;
@@ -239,6 +234,14 @@ i {
     margin: 1rem auto;
 }
 
+@media screen and (min-width: 768px) {
+    .card__flex {
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+}
 /* === Footer === */
 .footer {
     display: flex;
