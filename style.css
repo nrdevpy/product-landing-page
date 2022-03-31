@@ -41,10 +41,11 @@ input, label {
 
 /* === === === Utilities === === === */
 .container {
-    margin: 14vh auto 0 auto;
+    padding-top: 12vh;
+    margin-left: auto;
+    margin-right: auto;
     width: 95%;
 }
-
 /* === === === BEM === === === */
 
 /* === Header === */
