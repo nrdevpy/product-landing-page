@@ -16,7 +16,6 @@ body, figure {
     margin: 0;
 }
 ul {
-    width: 100%;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -188,3 +187,23 @@ i {
 }
 
 /* === Footer === */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    height: 10vh;
+    background-color: var(--secundaryColor);
+}
+.footer p{
+    margin: 0 0 0 1rem;
+    font-size: small;
+    color: #111;
+}
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 1rem;
+    margin-right: 1rem;
+}
