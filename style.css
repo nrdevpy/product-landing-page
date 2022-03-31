@@ -1,6 +1,7 @@
 /* === === === Globals === === === */
 :root {
-    --primaryColor: lightseagreen;
+    --primaryColor: hsl(177, 70%, 40%);
+    --hoverColor: hsl(177, 70%, 35%);
     --ease: ease .5s all;
 }
 * {
@@ -28,7 +29,11 @@ figure {
 h1, h2, h3 {
     text-align: center;
 }
+input, label {
+    display: block;
+}
 
+/* === === === Id === === === */
 #navBtn {
     font-size: 2rem;
     cursor: pointer;
@@ -36,12 +41,10 @@ h1, h2, h3 {
 
 /* === === === Utilities === === === */
 .container {
+    margin: 14vh auto 0 auto;
     width: 95%;
-    margin: 0 auto 0 auto;
 }
-.padd {
-    padding-top: 10vh;
-}
+
 /* === === === BEM === === === */
 
 /* === Header === */
@@ -67,6 +70,24 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 /* === Main === */
+.form > * {
+    text-align: center;
+    margin: .5rem 0;
+}
+.form input {
+    margin: .5rem auto 0 auto;
+
+}
+.form__btn {
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+}
+.form__btn:hover {
+    background-color: var(--hoverColor);
+}
 
 /* === Pricing Section === */
 
