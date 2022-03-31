@@ -28,15 +28,33 @@ figure {
 h1, h2, h3 {
     text-align: center;
 }
+
 #navBtn {
     font-size: 2rem;
     cursor: pointer;
+}
+
+/* === === === Utilities === === === */
+.container {
+    width: 95%;
+    margin: 0 auto 0 auto;
+}
+.padd {
+    padding-top: 10vh;
 }
 /* === === === BEM === === === */
 
 /* === Header === */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 10vh;
+    padding: 1rem;
     background-color: var(--primaryColor);
 }
 .nav {
@@ -45,7 +63,7 @@ h1, h2, h3 {
     left: -100vw;
     background-color: var(--primaryColor);
     transition: var(--ease);
-
+    
     text-transform: uppercase;
 }
 /* === Main === */
