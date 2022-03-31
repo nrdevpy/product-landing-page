@@ -1,5 +1,7 @@
 /* === === === Globals === === === */
-
+:root {
+    --primaryColor: lightseagreen;
+}
 * {
     box-sizing: border-box;
     font-family: Verdana;
@@ -25,11 +27,19 @@ figure {
 h1, h2, h3 {
     text-align: center;
 }
-
+#navBtn {
+    font-size: 2rem;
+    cursor: pointer;
+}
 /* === === === BEM === === === */
 
 /* === Header === */
-
+.header {
+    background-color: var(--primaryColor);
+}
+.nav {
+    
+}
 /* === Main === */
 
 /* === Pricing Section === */
