@@ -32,10 +32,11 @@ h1, h2, h3 {
 input, label {
     display: block;
 }
-
+i {
+    font-size: 2.2rem;
+}
 /* === === === Id === === === */
 #navBtn {
-    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -98,6 +99,19 @@ input, label {
 }
 .form__btn:hover {
     background-color: var(--hoverColor);
+}
+.section__features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section__features p {
+    text-align: start;
+}
+.features__div {
+    margin: 4vh 0;
 }
 
 /* === Pricing Section === */
