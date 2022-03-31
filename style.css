@@ -106,7 +106,26 @@ i {
     display: block;
     background-color: var(--secundaryColor);
 }
-
+@media screen and (min-width: 768px) {
+    .nav {
+        all: unset;
+    }
+    .nav ul {
+        flex-direction: row;
+        padding: 0;
+    }
+    .nav a {
+        padding: .3rem 1rem;
+        border-bottom: 2px solid var(--primaryColor);
+    }
+    .nav a:hover {
+        background-color: unset;
+        border-bottom: var(--secundaryColor) solid 2px;
+    }
+    #navBtn {
+        display: none;
+    }
+}
 /* === Main === */
 /* === Form === */
 .form > * {
