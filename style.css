@@ -1,6 +1,7 @@
 /* === === === Globals === === === */
 :root {
     --primaryColor: lightseagreen;
+    --ease: ease .5s all;
 }
 * {
     box-sizing: border-box;
@@ -35,10 +36,17 @@ h1, h2, h3 {
 
 /* === Header === */
 .header {
+    height: 10vh;
     background-color: var(--primaryColor);
 }
 .nav {
-    
+    position: fixed;
+    top: 10vh;
+    left: -100vw;
+    background-color: var(--primaryColor);
+    transition: var(--ease);
+
+    text-transform: uppercase;
 }
 /* === Main === */
 

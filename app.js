@@ -1,10 +1,15 @@
 // === === === Variables === === ===
-const navBtn = document.getElementById('navBtn');
+const nBtn = document.getElementById('navBtn');
+const nBar = document.getElementById('nav-bar');
 
 // === === === Functions === === ===
 const openNav = () => {
-    console.log ('work');
+    if (nBar.style.left === '0vw') {
+        nBar.style.left = '-100vw';
+    } else {
+        nBar.style.left = '0vw';
+    }
 };
 
 // === === === Events === === ===
-navBtn.addEventListener('click', openNav);
+nBtn.addEventListener('click', openNav);
