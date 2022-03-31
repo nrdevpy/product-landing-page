@@ -2,11 +2,18 @@
 :root {
     --primaryColor: hsl(177, 70%, 40%);
     --secundaryColor: hsl(177, 70%, 35%);
+    --gray: #f0f0f0;
     --ease: ease .3s all;
 }
 * {
     box-sizing: border-box;
     font-family: Verdana;
+}
+body {
+    scroll-behavior: smooth;
+}
+body, figure {
+    margin: 0;
 }
 ul {
     width: 100%;
@@ -17,9 +24,6 @@ ul {
 a {
     text-decoration: none;
     color: #000;
-}
-body, figure {
-    margin: 0;
 }
 figure {
     text-align: center;
@@ -45,7 +49,19 @@ i {
     margin-right: auto;
     width: 95%;
 }
-
+.btn {
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    transition: var(--ease);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: var(--secundaryColor);
+}
 /* === === === BEM === === === */
 
 /* === Header === */
@@ -64,6 +80,8 @@ i {
     padding: 1rem;
     background-color: var(--primaryColor);
 }
+
+/* === Nav === */
 .nav {
     position: fixed;
     top: 10vh;
@@ -89,7 +107,9 @@ i {
     display: block;
     background-color: var(--secundaryColor);
 }
+
 /* === Main === */
+/* === Form === */
 .form > * {
     text-align: center;
     margin: .5rem 0;
@@ -105,22 +125,11 @@ i {
     outline: none;
 }
 .form input:first-of-type:focus {
-    background-color: #f4f4f4;
+    background-color: var(--gray);
     outline: var(--secundaryColor) solid 2px;
 }
-.form__btn {
-    padding: .8rem 1rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: var(--primaryColor);
-    transition: var(--ease);
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.form__btn:hover {
-    background-color: var(--secundaryColor);
-}
+
+/* === Features Section === */
 .section__features {
     display: flex;
     flex-direction: column;
@@ -139,5 +148,43 @@ i {
 }
 
 /* === Pricing Section === */
+.card__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+.card__pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    
+    border: solid 1px #000;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.card__pricing h3 {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #222;
+    background-color: var(--gray);
+}
+.card__pricing p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: .5rem;
+}
+.card__pricing p:first-of-type {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card__pricing .btn {
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+}
 
 /* === Footer === */
