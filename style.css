@@ -9,12 +9,10 @@
     font-family: Verdana;
 }
 ul {
+    width: 100%;
     padding: 0;
     list-style: none;
     text-align: center;
-}
-li {
-    padding: .5rem;
 }
 a {
     text-decoration: none;
@@ -71,9 +69,25 @@ i {
     top: 10vh;
     left: -100vw;
     background-color: var(--primaryColor);
+    width: 100%;
+    height: 100%;
     transition: var(--ease);
-    
-    text-transform: uppercase;
+}
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    gap: 2rem;
+}
+.nav a{
+    display: block;
+    padding: 1rem;
+    transition: var(--ease);
+}
+.nav a:hover {
+    display: block;
+    background-color: var(--secundaryColor);
 }
 /* === Main === */
 .form > * {
