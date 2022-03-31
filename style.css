@@ -1,8 +1,8 @@
 /* === === === Globals === === === */
 :root {
     --primaryColor: hsl(177, 70%, 40%);
-    --hoverColor: hsl(177, 70%, 35%);
-    --ease: ease .5s all;
+    --secundaryColor: hsl(177, 70%, 35%);
+    --ease: ease .3s all;
 }
 * {
     box-sizing: border-box;
@@ -92,7 +92,7 @@ i {
 }
 .form input:first-of-type:focus {
     background-color: #f4f4f4;
-    outline: var(--hoverColor) solid 2px;
+    outline: var(--secundaryColor) solid 2px;
 }
 .form__btn {
     padding: .8rem 1rem;
@@ -100,9 +100,10 @@ i {
     outline: none;
     cursor: pointer;
     background-color: var(--primaryColor);
+    transition: var(--ease);
 }
 .form__btn:hover {
-    background-color: var(--hoverColor);
+    background-color: var(--secundaryColor);
 }
 .section__features {
     display: flex;
@@ -113,6 +114,9 @@ i {
 }
 .section__features p {
     text-align: start;
+}
+.section__features i {
+    color: var(--secundaryColor);
 }
 .features__div {
     margin: 4vh 0;
