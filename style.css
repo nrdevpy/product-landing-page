@@ -42,14 +42,18 @@ i {
 
 /* === === === Utilities === === === */
 .container {
-    padding-top: 12vh;
+    padding-top: 8vh;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
 }
+
 /* === === === BEM === === === */
 
 /* === Header === */
+.header__div {
+    height: 10vh;
+}
 .header {
     position: fixed;
     top: 0;
