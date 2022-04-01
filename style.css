@@ -27,7 +27,7 @@ a {
 figure {
     text-align: center;
 }
-h1, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 input, label {
@@ -162,7 +162,13 @@ i {
     text-align: start;
 }
 .section__features i {
+    text-align: center;
     color: var(--secundaryColor);
+}
+.features__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .video {
     text-align: center;
@@ -175,6 +181,9 @@ i {
 }
 
 @media screen and (min-width: 768px) {
+    h2 {
+        text-align: unset;
+    }
     .video iframe {
         max-width: 75vw;
         min-height: 50vh;
@@ -188,9 +197,8 @@ i {
     }
     .features__div {
         display: flex;
-        align-items: center;
+        flex-direction: row;
         column-gap: 4rem;
-        margin: 0 auto;
     }
 }
 @media screen and (min-width: 1280px) {
